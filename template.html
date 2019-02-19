@@ -1,0 +1,240 @@
+<html lang="en">
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127697314-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127697314-1');
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FFEra • A private server community.</title>
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="era, free ffxi, free mmo, myera, myera ffxi, wotg, toau, 75 cap, ffxi community, free mmo, free to play, ffxi free to play, ffxi, free mmo, mmorpg, rpg, role playing game, final fantasy xi, zilart, promathia, cop, final fantasy xi, era ffxi">
+<meta name="description" content="Era FFXI Private Server is devoted to 75 cap content. Our project goal is focused on streamlining leveling and enhancing endgame experience, by focusing on custom content." />
+<meta name="author" content="Era">
+	
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/default/css/style.css" rel="stylesheet">
+<style>
+
+	.card-body {
+    background-color: #ededed;
+}
+	html,body {
+	padding-top: 50px;
+    background: url(../images/eratexture.png) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+</style>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable2");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+	<div class="container-fluid">
+		<div class="row">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#"><img src="theme/default/images/logo.png" width="50px" height="50px"/></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li> 	  
+ 
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDatabases" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DROP DOWN MENUS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDatabases"><a class="dropdown-item" href="#" target="">DROP DOWN LINK</a></div>
+		</li>
+		   
+      <li class="nav-item">
+        <a class="nav-link" href="#">Normal Link</a>
+      </li>  
+	</ul>
+	<ul class="nav navbar-nav navbar-right"> 	  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Right Side Link</a>
+      </li> 		  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Account</a>
+      </li> 	
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>		<div class="col-md-2">
+			<div id="card-new">
+				<div class="card">
+					<div class="card-header alert-info">
+						 <center><a class="card-link collapsed" data-toggle="collapse" href="#card-element-news">News</a></center>
+					</div>
+					<div id="card-element-news" class="collapse">
+						<div class="card-body">
+						NEWS
+						</div>
+					</div>
+				</div>
+			</div>			<div id="card-lastest">
+				<div class="card">
+					<div class="card-header alert-info">
+						 <center><a class="card-link collapsed" data-toggle="collapse" href="#card-element-forums">Recent Posts</a></center>
+					</div>
+					<div id="card-element-forums" class="collapse">
+						<div class="card-body">
+						Recent Posts
+						</div>
+					</div>
+				</div>
+			</div>			<div id="card-lastest">
+				<div class="card">
+					<div class="card-header alert-info">
+						 <center><a class="card-link collapsed" data-toggle="collapse" href="#card-element-pguides">Recent Guides</a></center>
+					</div>
+					<div id="card-element-pguides" class="collapse">
+						<div class="card-body">
+						Forum Guides						
+						</div>
+					</div>
+				</div>
+			</div>			<div id="card-guide">
+				<div class="card">
+					<div class="card-header alert-info">
+						 <center><a class="card-link collapsed" data-toggle="collapse" href="#card-element-guides">Setup Guides</a></center>
+					</div>
+					<div id="card-element-guides" class="collapse">
+						<div class="card-body">
+									Guides
+						</div>
+					</div>
+				</div>
+			</div>		</div><div class="col-md-7">
+<nav>
+				<ol class='breadcrumb alert-success'>
+					<li class='breadcrumb-item'>
+						<a href='#'>Home</a>
+					</li>
+					<li class='breadcrumb-item active'>
+						BREADCRUMB
+					</li>
+				</ol>
+			</nav><div id="card-page">
+	<div class="card">
+		<div class="card-header alert-info">
+			HEADER		</div>
+		<div id="card-element-page">
+			<div class="card-body">
+				<div class="card-body">
+				Content Page
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>
+
+</div><div class="col-md-3">
+<div class='alert alert-success'>
+        <div class='panel-heading'>
+			<strong>Status:</strong> <br> Online
+		</div>
+	</div><div id="card-uptime">
+	<div class="card">
+		<div class="card-header alert-warning">
+			 <a class="card-link collapsed" data-toggle="collapse" aria-expanded="true" href="#card-element-uptime">Uptimes</a>
+		</div>
+		<div id="card-element-uptime" class="collapse">
+			<div class="card-body">
+
+Uptimes Page
+
+		</div>
+		</div>
+	</div>
+</div><div id="card-online">
+	<div class="card bg-light">
+		<div class="card-header alert-warning">
+			 <a class="card-link collapsed" data-toggle="collapse" aria-expanded="true" href="#card-element-online">Online List:</a>
+		</div>
+		<div id="card-element-online" class="collapse">
+			<div class="card-body">
+			<div id=online style="height:auto;">
+			Online Page
+			<div>
+		</div>
+	</div>
+</div></div>	</div>
+</div>
+</div>
+</div>
+<center><font color=white>Footer</font></center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </body>
+</html>
